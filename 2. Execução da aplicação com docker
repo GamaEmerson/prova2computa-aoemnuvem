@@ -1,8 +1,19 @@
+Objetivo: executar um servidor Nginx utlizando Docker, verificar seu funcionamento e personalizar a pagina web
 
-Evidencia 1  
+Evidencia 1  - Conteinêr em execução
+
+comando utilizado: docker ps
+
+Insira abaixo a captura de tela ou a saida do terminal mostrando o conteiner "comunicado" em execução.
 
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
 bc875a4de9ce   nginx:alpine   "/docker-entrypoint.…"   14 seconds ago   Up 13 seconds   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp   comunicado
+
+Evidencia 2  - Pagina  personalizada
+
+Comando utlizado : curl http://localhost:8090
+
+Insira a saida do terminal mostrando a mensagem personalizada com seu nome
 
 root@ubuntu:~$ curl http://localhost:8090
 <!DOCTYPE html>
