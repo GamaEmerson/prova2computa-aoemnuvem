@@ -1,18 +1,24 @@
 Questão 1. Qual é a diferença entre IaaS e SaaS? Cite um exemplo de utilização de cada modelo.
 
+RESPOSTA:
+
 IaaS (Infraestrutura como Serviço) oferece recursos de infraestrutura virtualizados, como servidores, armazenamento e redes, permitindo que o usuário configure o ambiente conforme sua necessidade. Exemplo: Amazon EC2.
 
 SaaS (Software como Serviço) disponibiliza programas prontos para utilização pela internet, sem necessidade de instalação ou gerenciamento da infraestrutura. Exemplo: Google Drive.
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Questão 2. Uma empresa utiliza servidores próprios e também recursos de um provedor de nuvem pública. Qual modelo de implantação em nuvem essa empresa utiliza?
 
+RESPOSTA:
+
 Utiliza o modelo de nuvem híbrida, pois combina infraestrutura própria (nuvem privada) com serviços de um provedor de nuvem pública.
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Questão 3. Qual é a principal diferença entre uma máquina virtual e um contêiner?
+
+RESPOSTA:
 
 A máquina virtual possui um sistema operacional próprio e virtualiza o hardware. Já o contêiner compartilha o sistema operacional do servidor, sendo mais leve, rápido e eficiente no uso dos recursos.
