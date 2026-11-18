@@ -1,28 +1,9 @@
-Initialising Scenario...... done
 
-root@ubuntu:~$ docker --version
-Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
-root@ubuntu:~$ .3, build 29.1.3-0ubuntu3~24.04.2
-root@ubuntu:~$ 
-.3,: command not found
-root@ubuntu:~$: command not found
-root@ubuntu:~$ docker run -d --name comunicado -p 8090:80 nginx:alpine
-Unable to find image 'nginx:alpine' locally
-alpine: Pulling from library/nginx
-881fc932939e: Pull complete 
-1abafee971b9: Pull complete 
-c7dfd64eeb02: Pull complete 
-e011f124249b: Pull complete 
-a746bd1dc828: Pull complete 
-b9c6ee6a30f8: Pull complete 
-69d81d552257: Pull complete 
-da90db506dd5: Pull complete 
-Digest: sha256:fed7e14be83cbd2661a75cdc5b872d936cf155d46c327084d30b8df19ae88d72
-Status: Downloaded newer image for nginx:alpine
-bc875a4de9ce8d7da6b1d18f0f9bd7c57bcc82a175eb353cbb0cbd5af8700450
-root@ubuntu:~$ docker ps
+Evidencia 1  
+
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                     NAMES
 bc875a4de9ce   nginx:alpine   "/docker-entrypoint.…"   14 seconds ago   Up 13 seconds   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp   comunicado
+
 root@ubuntu:~$ curl http://localhost:8090
 <!DOCTYPE html>
 <html>
@@ -56,8 +37,4 @@ Emerson</p>" > /usr/share/nginx/html/index.html'
 root@ubuntu:~$ curl http://localhost:8090
 <h1>Comunicado interno disponivel</h1><p>Aluno:
 Emerson</p>
-root@ubuntu:~$ docker stop comunicado
-comunicado
-root@ubuntu:~$ docker rm comunicado
-comunicado
-root@ubuntu:~$ 
+
