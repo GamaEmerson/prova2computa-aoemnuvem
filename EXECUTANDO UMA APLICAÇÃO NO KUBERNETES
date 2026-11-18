@@ -1,0 +1,15 @@
+root@controlplane:~$ kubectl get nodes
+NAME           STATUS   ROLES           AGE   VERSION
+controlplane   Ready    control-plane   13d   v1.37.1
+node01         Ready    <none>          13d   v1.37.1
+
+root@controlplane:~$ kubectl create deployment comunicado-web --image=nginx:alpine
+deployment.apps/comunicado-web created
+
+root@controlplane:~$ kubectl get deployments
+NAME             READY   UP-TO-DATE   AVAILABLE   AGE
+comunicado-web   1/1     1            1           26s
+
+root@controlplane:~$ kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+comunicado-web-57c76f7bc4-c2t56   1/1     Running   0          34s
