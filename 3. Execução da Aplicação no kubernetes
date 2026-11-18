@@ -1,3 +1,11 @@
+Objetivo: Criar um deployment e verificar os Pods gerenciados pelo Kubernetes
+
+Evidência 3 - Deployment e Pod
+
+Comando utlizado: kubectl get pods
+
+insira a captura de tela ou a saida do terminal mostrando o Pod criado.
+
 root@controlplane:~$ kubectl get nodes
 NAME           STATUS   ROLES           AGE   VERSION
 controlplane   Ready    control-plane   13d   v1.37.1
