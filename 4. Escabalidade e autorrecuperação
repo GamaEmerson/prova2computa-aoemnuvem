@@ -1,3 +1,5 @@
+obejtivo
+
 root@controlplane:~$ kubectl scale deployment comunicado-web --replicas=3
 deployment.apps/comunicado-web scaled
 
@@ -7,11 +9,6 @@ comunicado-web-57c76f7bc4-c2t56   1/1     Running   0          8m31s
 comunicado-web-57c76f7bc4-pwmhv   1/1     Running   0          11s
 comunicado-web-57c76f7bc4-wf5dn   1/1     Running   0          11s
 
-root@controlplane:~$ kubectl get pods
-NAME                              READY   STATUS    RESTARTS   AGE
-comunicado-web-57c76f7bc4-c2t56   1/1     Running   0          10m
-comunicado-web-57c76f7bc4-pwmhv   1/1     Running   0          2m15s
-comunicado-web-57c76f7bc4-wf5dn   1/1     Running   0          2m15s
 
 root@controlplane:~$ kubectl delete pod comunicado-web-57c76f7bc4-c2t56
 pod "comunicado-web-57c76f7bc4-c2t56" deleted from default namespace
