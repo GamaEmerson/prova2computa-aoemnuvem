@@ -1,0 +1,21 @@
+Questão 1. Qual é a diferença entre uma imagem Docker e um contêiner em execução?
+
+Resposta:Imagem é o modelo; contêiner é a instância em execução
+
+----------------------------------------------------------------------------------------------------
+
+Questão 2. Qual é a função de um Deployment no Kubernetes?
+
+Resposta: Gerenciar Pods e réplicas
+
+----------------------------------------------------------------------------------------------------
+
+Questão 3. O que aconteceu quando você excluiu um Pod? Por que isso aconteceu?
+
+Resposta: Observe se o Kubernetes criou um novo Pod para substituir aquele que foi removido
+
+----------------------------------------------------------------------------------------------------
+
+Questão 4. Qual é a finalidade de um Service no Kubernetes?
+
+Resposta: Comunicação estável com os Pods
