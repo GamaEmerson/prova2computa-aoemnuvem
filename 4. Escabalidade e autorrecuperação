@@ -1,4 +1,8 @@
-obejtivo
+obejtivo: aumentar a quantidade de réplicas e observar a recuperação automatica após a exclusão de um pod 
+
+Evidencia 4 - Escalabilidade
+
+Comandos utilizados: kubectl scale deployment comunicado-web --replicas=3  /  kubectl get pods
 
 root@controlplane:~$ kubectl scale deployment comunicado-web --replicas=3
 deployment.apps/comunicado-web scaled
@@ -9,6 +13,11 @@ comunicado-web-57c76f7bc4-c2t56   1/1     Running   0          8m31s
 comunicado-web-57c76f7bc4-pwmhv   1/1     Running   0          11s
 comunicado-web-57c76f7bc4-wf5dn   1/1     Running   0          11s
 
+Evidencia 5. Autorrecuperação
+
+Comandos utilizados: kubectl delete pod NOME_DO_POD  /  kubectl get pods
+
+Insira a evidência mostrando que um novo Pod foi criado após a exclusão
 
 root@controlplane:~$ kubectl delete pod comunicado-web-57c76f7bc4-c2t56
 pod "comunicado-web-57c76f7bc4-c2t56" deleted from default namespace
@@ -19,17 +28,6 @@ comunicado-web-57c76f7bc4-d74hs   1/1     Running   0          11s
 comunicado-web-57c76f7bc4-pwmhv   1/1     Running   0          3m49s
 comunicado-web-57c76f7bc4-wf5dn   1/1     Running   0          3m49s
 
---------------------------------------------------------------------------------
-
-Evidência 4: registre os três Pods.
-NAME                              READY   STATUS    RESTARTS   AGE
-comunicado-web-57c76f7bc4-c2t56   1/1     Running   0          8m31s
-comunicado-web-57c76f7bc4-pwmhv   1/1     Running   0          11s
-comunicado-web-57c76f7bc4-wf5dn   1/1     Running   0          11s
 
 
-Evidência 5: registre o resultado mostrando a recuperação da aplicação.
-NAME                              READY   STATUS    RESTARTS   AGE
-comunicado-web-57c76f7bc4-d74hs   1/1     Running   0          11s
-comunicado-web-57c76f7bc4-pwmhv   1/1     Running   0          3m49s
-comunicado-web-57c76f7bc4-wf5dn   1/1     Running   0          3m49s
+
