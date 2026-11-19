@@ -1,1 +1,5 @@
+Objetivo: criar um service e verificar a comunicação HTTP dentro do cluster Kubernetes
 
+Evidencia 6 - Service e acesso HTTP
+
+COMANDOS UTLIZADOS: kubectl get services  /  kubectl run teste --image=curlimages/curl --rm -it --restart=Never --curl http://comunicado-service
